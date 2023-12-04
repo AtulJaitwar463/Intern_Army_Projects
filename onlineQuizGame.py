@@ -28,7 +28,7 @@ class Answer (db.Model):
     id =db.Column(db.Integer, primary_key=True)
     user_id= db.Column(db.Integer, db.Foreignkey("userId"), nullable= False)
     question_id = db.Column(db.Integer, dh.Foreignkey('question.id'), nullable=False) 
-    answer_content =db.Column(db.String(100), nullablueFalse)
+    answer_content =db.Column(db.String(100), nullable=False)
 
 #Add more answer-related fields as needed
 
